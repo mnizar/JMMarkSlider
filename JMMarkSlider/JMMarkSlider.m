@@ -51,7 +51,7 @@
     
     // Selected side
     CGContextSetLineCap(context, kCGLineCapRound);
-    CGContextSetLineWidth(context, 12.0);
+    CGContextSetLineWidth(context, 6.0);
     CGContextMoveToPoint(context, 6, CGRectGetHeight(innerRect)/2);
     CGContextAddLineToPoint(context, innerRect.size.width - 10, CGRectGetHeight(innerRect)/2);
     CGContextSetStrokeColorWithColor(context, [self.selectedBarColor CGColor]);
@@ -60,7 +60,7 @@
     
     // Unselected side
     CGContextSetLineCap(context, kCGLineCapRound);
-    CGContextSetLineWidth(context, 12.0);
+    CGContextSetLineWidth(context, 6.0);
     CGContextMoveToPoint(context, 6, CGRectGetHeight(innerRect)/2);
     CGContextAddLineToPoint(context, innerRect.size.width - 10, CGRectGetHeight(innerRect)/2);
     CGContextSetStrokeColorWithColor(context, [self.unselectedBarColor CGColor]);
